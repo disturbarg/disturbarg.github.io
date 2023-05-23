@@ -1,0 +1,247 @@
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('b.otf') format('truetype');
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(42, 41, 41);
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    font-family: 'MiFuente';
+    list-style: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    margin-top: 0.3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+.drop {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#remera {
+    display: block;
+    margin: 30px auto 0;
+    width: 100%;
+}
+
+
+
+#disponible {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+}
+
+#boton button {
+    border: 1px solid rgb(234, 234, 234);
+    padding: 10px;
+    font-size: 27px;
+    border-radius: 20px;
+}
+
+.linea {
+    background-color: rgb(234, 234, 234);
+    height: 1px;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
+.linea2 {
+    background-color: rgb(234, 234, 234);
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 24px;
+    position: fixed;
+    bottom: 3%;
+}
+
+#nav-item2 {
+    border-radius: 20px;
+    background-color: #e5476a;
+    padding: 4px;
+    margin-left: 1.9em;
+    margin-top: 0.9em;
+}
+#talles {
+    max-width: 67%;
+    display: block;
+    margin: 2.6em auto;
+}
+
+#cuidados {
+    max-width: 73%;
+    display: block;
+    margin: 2.6em auto;
+}
+
+
+
+#remera {
+    max-width: 93%;
+}
+
+.slider {
+    aspect-ratio: 10 /16;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 1.6em auto 1em;
+}
+
+.slider img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+#h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.comprar {
+    
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+#precio {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container-comprar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+@media (max-width: 415px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    #remera {
+        margin: 15vw auto 0;
+        width: 900px;
+    }
+
+    img#remera-drop-adelante, #remera-drop-atras {
+        width: 90%;
+        margin-top: 2em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container-remeras ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #disponible {
+        font-size: 27px;
+        margin: 15px 0;
+    }
+
+    #boton button {
+        width: fit-content;
+        font-size: 20px;
+    }
+
+    #talles {
+        max-width: 67%;
+        display: block;
+        margin: 2.6em auto;
+    }
+    
+    #cuidados {
+        max-width: 73%;
+        display: block;
+        margin: 2.6em auto;
+    }
+
+  
+
+    #rights {
+        position: fixed;
+        bottom: 68px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 396px) {
+    
+    #nav-item2 {
+        font-size: 0.9em;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 380px) {
+    
+    #nav-item2 {
+        font-size: 0.8em;
+    }
+    }   
+
+    @media screen and (min-width: 0px) and (max-width: 363px) {
+    
+        #nav-item2 {
+            font-size: 0.78em;
+        }
+  }
